@@ -1,4 +1,4 @@
-const { UpyunUploadPlugin, QiNiuUploadPlugin, AliOssUploadPlugin } = require('./lib/index')
+const { UpyunUploadPlugin, QiNiuUploadPlugin, AliOssUploadPlugin } = require('@jomsou/upload-webpack-plugin')
 const upyun = require('upyun')
 const qiniu = require('qiniu')
 const ALY = require('aliyun-sdk')
