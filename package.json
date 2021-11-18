@@ -19,7 +19,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts-resolve",
+    "build": "tsup src/index.ts --format cjs,esm --dts-resolve --minify",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
