@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@egoist/prettier-config': 0.1.0
-  '@jomsou/upload': ^1.4.0
+  '@jomsou/upload': ^1.5.0
   '@sucrase/jest-plugin': 2.2.0
   '@types/jest': 27.0.2
   jest: 27.3.1
@@ -11,7 +11,7 @@ specifiers:
   typescript: 4.4.4
 
 dependencies:
-  '@jomsou/upload': 1.4.0
+  '@jomsou/upload': 1.5.0
 
 devDependencies:
   '@egoist/prettier-config': 0.1.0
@@ -551,8 +551,8 @@ packages:
       chalk: 4.1.0
     dev: true
 
-  /@jomsou/upload/1.4.0:
-    resolution: {integrity: sha512-YzTky68riuTF+/7WOmBjbJjBzGQNTs4rFsnvf42QOMCDdmAIZjgRZVidJSBY7HtJ8M5EYVCeXPVETPyxY00XXw==}
+  /@jomsou/upload/1.5.0:
+    resolution: {integrity: sha512-4UBq9LXso/bHU5qU8x+1+t9zxuu+S32tKol2SYso4paranxj6Y7xLzlJy7nlxWP1kN8+gNDDTjXInZlhvcBfFQ==}
     dependencies:
       single-line-log: 1.1.2
     dev: false
