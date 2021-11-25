@@ -12,7 +12,9 @@ class AliOssUploadPlugin {
     }
   }) {
     compiler.hooks.afterEmit.tap('alioss-plugin', () => {
-      new AliOssUpload(this.option)
+      process.nextTick(() => {
+        new AliOssUpload(this.option)
+      })
     })
   }
 }

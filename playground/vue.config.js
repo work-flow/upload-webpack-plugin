@@ -9,15 +9,15 @@ module.exports = {
   assetsDir: 'assets',
   configureWebpack: {
     plugins: [
-      // new UpyunUploadPlugin({
-      //   sdk: upyun,
-      //   serviceName: process.env.jr_UPYUN_SERVICE || '',
-      //   operatorName: process.env.jr_UPYUN_OPERATOR || '',
-      //   password: process.env.jr_UPYUN_PASSWD || '',
-      //   remoteFilePath: '/huodong/2021/11/test-webpack-plugins/assets',                                 
-      //   filePath: path.resolve(process.cwd(), 'dist/assets'),
-      //   openConfirm: false,   
-      // })
+      new UpyunUploadPlugin({
+        sdk: upyun,
+        serviceName: process.env.jr_UPYUN_SERVICE || '',
+        operatorName: process.env.jr_UPYUN_OPERATOR || '',
+        password: process.env.jr_UPYUN_PASSWD || '',
+        remoteFilePath: '/huodong/2021/11/test-webpack-plugins/assets',                                 
+        filePath: path.resolve(process.cwd(), 'dist/assets'),
+        // openConfirm: false,   
+      })
       // new QiNiuUploadPlugin({
       //   sdk: qiniu,
       //   accessKey: process.env.QINIU_ACCESSKEY || '',
@@ -27,16 +27,16 @@ module.exports = {
       //   remoteFilePath: '/dist',
       //   openConfirm: false,
       // })
-      new AliOssUploadPlugin({
-        sdk: ALY,
-        accessKeyId: process.env.ALIOSS_ACCESSKEYID || '',
-        secretAccessKey: process.env.ALIOSS_SECRETACESSKEY || '',
-        endpoint: process.env.ALIOSS_ENDPOINT || '',
-        bucket: 'zeditor',
-        openConfirm: false,
-        filePath: path.resolve(__dirname, './dist'),
-        ossUploadStream: OssUploadStream
-      })   
+      // new AliOssUploadPlugin({
+      //   sdk: ALY,
+      //   accessKeyId: process.env.ALIOSS_ACCESSKEYID || '',
+      //   secretAccessKey: process.env.ALIOSS_SECRETACESSKEY || '',
+      //   endpoint: process.env.ALIOSS_ENDPOINT || '',
+      //   bucket: 'zeditor',
+      //   openConfirm: false,
+      //   filePath: path.resolve(__dirname, './dist'),
+      //   ossUploadStream: OssUploadStream
+      // })   
     ]
   }
 }

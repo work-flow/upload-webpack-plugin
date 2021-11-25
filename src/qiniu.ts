@@ -12,7 +12,9 @@ class QiNiuUploadPlugin {
     }
   }) {
     compiler.hooks.afterEmit.tap('qiniu-plugin', () => {
-      new QiuNiuUpload(this.option)
+      process.nextTick(() => {
+        new QiuNiuUpload(this.option)
+      })
     })
   }
 }

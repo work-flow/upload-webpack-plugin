@@ -12,7 +12,9 @@ class UpyunUploadPlugin {
     }
   }) {
     compiler.hooks.afterEmit.tap('upyun-plugin', () => {
-      new UpyunUpload(this.option)
+      process.nextTick(() => {
+        new UpyunUpload(this.option)
+      })
     })
   }
 }
