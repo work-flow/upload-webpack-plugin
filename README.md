@@ -35,7 +35,7 @@ npm i aliyun-sdk aliyun-oss-upload-stream -D
 #### 又拍云
 ```js
 // webpack.config.[t|j]s
-const { UpyunUploadPlugin } = require('./lib/index')
+const { UpyunUploadPlugin } = require('.@jomsou/upload')
 const upyun = require('upyun')
 const path = require('path')
 
@@ -57,7 +57,7 @@ module.exports = {
 #### 七牛云
 ```js
 // webpack.config.[t|j]s
-const { QiNiuUploadPlugin } = require('./lib/index')
+const { QiNiuUploadPlugin } = require('.@jomsou/upload')
 const qiniu = require('qiniu')
 const path = require('path')
 
@@ -79,7 +79,7 @@ module.exports = {
 ### 阿里oss
 ```js
 // webpack.config.[t|j]s
-const { UpyunUploadPlugin } = require('./lib/index')
+const { UpyunUploadPlugin } = require('.@jomsou/upload')
 const ALY = require('aliyun-sdk')
 const OssUploadStream = require('aliyun-oss-upload-stream')
 const path = require('path')
